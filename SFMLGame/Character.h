@@ -7,6 +7,7 @@ class Character
 	
 public:
 	sf::Image m_spriteSheet;
+	sf::Vector2f m_position;
 	Character();
 	~Character();
 	void initialize();

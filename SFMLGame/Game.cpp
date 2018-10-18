@@ -35,9 +35,10 @@ void Game::update()
 		if (event.type == sf::Event::Closed)
 			window->close();
 
-		player->update();
-		npc->update();
+		
 	}
+	player->update();
+	npc->update();
 
 }
 

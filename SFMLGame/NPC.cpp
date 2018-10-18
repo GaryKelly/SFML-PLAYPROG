@@ -25,6 +25,4 @@ void NPC::setSprite()
 	m_npcSprite.setPosition(sf::Vector2f(600, 200));
 }
 
-void NPC::changeMove()
-{
-}
+

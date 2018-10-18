@@ -12,6 +12,7 @@ class Player : public Character
 	sf::Texture m_playerTexture;
 	sf::Sprite m_playerSprite;
 	bool m_normalMove = true;
+	sf::Vector2f m_position = sf::Vector2f(10, 300);
 
 public:
 	Player();
@@ -19,6 +20,7 @@ public:
 	void initialize();
 	void setSprite();
 	void update();
+	void changeMove();
 	void draw(sf::RenderWindow &t_window);
 	sf::Sprite getSprite() { return m_playerSprite; };
 };

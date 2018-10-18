@@ -11,7 +11,7 @@ class NPC : public Character
 	sf::Image* m_spriteSheetNPC = &m_spriteSheet;
 	sf::Texture m_npcTexture;
 	sf::Sprite m_npcSprite;
-	bool m_normalMove;
+	
 public:
 	NPC();
 	~NPC();
@@ -19,7 +19,7 @@ public:
 	void update();
 	void draw(sf::RenderWindow &t_window);
 	void setSprite();
-	void changeMove();
+	
 	sf::Sprite getSprite() { return m_npcSprite; };
 };
 #endif
